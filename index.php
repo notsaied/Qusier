@@ -10,6 +10,7 @@
       <title><?= $info['title'] ?></title>
       <!-- Fonts -->
       <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
       <!-- Style Files -->
       <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
@@ -150,8 +151,21 @@
         <div class="container">
              <h2 class="side_title">رساله عشوائية</h2>
              <p class="lead">
-                 بحبك يا بلدي
+               رساله عشوائية .. انت كمان تقدر تسيب رساله وغيرك هيقدر يشوفها لما يدخل علي الموقع
              </p>
+
+                <div class="text-center">
+
+                <img src="https://www.svgrepo.com/show/5125/avatar.svg" width="100" alt="Profile Picture" />
+
+                <div class="mt-2">Ahmed SAied</div>
+
+                <p class="lead">
+             بحبك يا بلادي بحبك يا بلادي بحبك يا بلادي بحبك يا بلادي بحبك يا بلادي
+                </p>
+
+                </div>
+
         </div>
     </section>
 
@@ -159,9 +173,9 @@
     <section class="leave_message py-2 bg-there">
         <div class="container">
             <h2 class="side_title">حابب تقول حاجه ؟</h2>
-            <div class="lead">
+            <p class="lead">
                اكتب رساله الكل هيشوفها تعبيرا عن اي حاجه حاببها او افتراح للبد
-            </div>
+            </p>
             <form>
                 <input type="text" class="form-control" id="name" placeholder="اسمك" required />
                 <input type="email" id="email" class="form-control" placeholder="ايميلك" required />
@@ -171,8 +185,14 @@
         </div>
     </section>
 
+    <section class="share py-3 bg-light text-center">
+         <i class="ri-whatsapp-line icon" style="color:#2FCC71;"></i>
+         <i class="ri-instagram-line icon" style="color:#B817BE;"></i>
+         <i class="ri-facebook-circle-line icon" style="color:#111EFF;"></i>
+    </section>
+
     <footer class="py-4 text-center bg-dark text-light">
-        Developer By Saiedoz
+        Developered By <a href="https://instagram.com/notsaied">Saiedoz</a>
     </footer>
 
     <!-- JS section -->
