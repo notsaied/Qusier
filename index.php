@@ -8,6 +8,10 @@
       <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title><?= $info['title'] ?></title>
+
+      <!-- Lib -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
       <!-- Fonts -->
       <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
       <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -15,25 +19,22 @@
       <!-- Style Files -->
       <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="styles/main.css?r=<?php echo rand(1000,99999); ?>">
-
     </head>
 
     <body>
-
    <!-- Navbar Section -->
-   <!-- https://jsfiddle.net/mohamedyousef1980/4up5a43d/1/
-      Big Thx For :  Mohamed Yousef
-   -->
     <div class="header p-3">
+        <div class="container">
       <h2 class="title" style="text-align:center;">مرحبا بك</h2>
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
+      </div>
       </div>
     </div> <!-- End Navbar -->
 
     <!-- Frist Section -->
     <section class="description py-2">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <h1 class="display-1 text-center mt-4 mb-4">القصير</h1>
             <p class="lead">مدينة وميناء في محافظة البحر الأحمر، مصر. اسمها القديم ليوكوس ليمن (ويعني الميناء الأبيض باليونانية، Λευκός Λιμήν). للقصير تاريخ طويل يمتد لأكثر من 5000 سنة، ومن هناك بدأت الملكة حتشبسوت رحلتها الاستكشافية إلى بلاد بونت. في القرن السادس عشر حكمها السلطان سليم الأول وهو ما يزال يقف على شكل تمثال في قلب المدينة وللقصير اهمية استراتيجية حربية واليوم تعتبر منتجعا سياحياً هادئاً بشواطئها الرملية ومياهها الصافية وشعابها المرجانية ورياضاتها المائية.
 
@@ -57,7 +58,7 @@
     </section> <!-- End descripton section -->
 
     <section class="places py-2">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="side_title">اهم المعالم</h2>
 
         <p class="lead">
@@ -81,7 +82,7 @@
 </div>
 
 <div class="carousel-item">
-  <img src="https://img.youm7.com/ArticleImgs/2019/10/7/50984-2-%D8%A7%D9%84%D8%B7%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D8%B1.jpg" alt="...">
+  <img src="https://thumbs.dreamstime.com/b/ancient-fort-old-egyptian-town-ottoman-traditional-el-quseir-red-sea-coast-view-to-214164677.jpg" alt="...">
   <div class="carousel-caption d-none d-md-block">
     <h5>hpef</h5>
     <p>ewfewf</p>
@@ -95,30 +96,19 @@
     <p>ewfewf</p>
   </div>
 </div>
-
-
   </div>
-
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
         </div>
 
+      </div>
 
     </section> <!-- End Places Section -->
 
     <section class="times py-2 bg-there">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="side_title">مواعيد الاذان</h2>
             <p class="lead">
-            اوثات الاذان حسب التوقيت المحلي لمدينة القصير
+                اوقات الاذان حسب التوقيت المحلي لمدينة القصير.
             </p>
             <table class="table table-striped table-dark">
   <thead>
@@ -148,7 +138,7 @@
 
 
     <section class="random_message py-2">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
              <h2 class="side_title">رساله عشوائية</h2>
              <p class="lead">
                رساله عشوائية .. انت كمان تقدر تسيب رساله وغيرك هيقدر يشوفها لما يدخل علي الموقع
@@ -158,11 +148,12 @@
 
                 <img src="https://www.svgrepo.com/show/5125/avatar.svg" width="100" alt="Profile Picture" />
 
-                <div class="mt-2">Ahmed SAied</div>
+                <div class="mt-2"><b>Ahmed Saied</b></div>
 
-                <p class="lead">
+                <blockquote class="mt-2">
+
              بحبك يا بلادي بحبك يا بلادي بحبك يا بلادي بحبك يا بلادي بحبك يا بلادي
-                </p>
+                </blockquote>
 
                 </div>
 
@@ -171,31 +162,33 @@
 
 
     <section class="leave_message py-2 bg-there">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="side_title">حابب تقول حاجه ؟</h2>
             <p class="lead">
                اكتب رساله الكل هيشوفها تعبيرا عن اي حاجه حاببها او افتراح للبد
             </p>
             <form>
-                <input type="text" class="form-control" id="name" placeholder="اسمك" required />
-                <input type="email" id="email" class="form-control" placeholder="ايميلك" required />
-                <textarea id="message" class="form-control" placeholder="رسالتك" required></textarea>
-                <button class="btn btn-success btn-block" required>ارسال</button>
+                <input type="text" class="form-control mt-2" id="name" placeholder="اسمك" required />
+                <input type="email" id="email" class="form-control mt-2" placeholder="ايميلك" required />
+                <textarea id="message" class="form-control mt-2" rows="3" placeholder="رسالتك" required></textarea>
+                <button class="btn btn-success btn-block mt-2" required><i class="ri-send-plane-fill"></i> ارسال</button>
             </form>
         </div>
     </section>
 
-    <section class="share py-3 bg-light text-center">
-         <i class="ri-whatsapp-line icon" style="color:#2FCC71;"></i>
-         <i class="ri-instagram-line icon" style="color:#B817BE;"></i>
-         <i class="ri-facebook-circle-line icon" style="color:#111EFF;"></i>
-    </section>
-
     <footer class="py-4 text-center bg-dark text-light">
-        Developered By <a href="https://instagram.com/notsaied">Saiedoz</a>
+        <div class="container">
+            <div class="text-center">
+                <div class="mt-3">Made By Saiedoz</div>
+             <i class="ri-whatsapp-line icon" style="color:#2FCC71;"></i>
+             <i class="ri-instagram-line icon" style="color:#B817BE;"></i>
+             <i class="ri-facebook-circle-line icon" style="color:#111EFF;"></i>
+            </div>
+        </div>
     </footer>
 
     <!-- JS section -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
 
@@ -208,8 +201,9 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-$('.carousel').carousel();
 
+    $('.carousel').carousel();
+    AOS.init();
 
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
@@ -239,9 +233,17 @@ let sections = {
         $('.title').css({'text-align':'right'});
 });
 
-
-
  </script>
+    <!--
+   [] Big Thx For :
+          Mohamed Yousef
+          Owner Pictures in wb
+          Hady Store
 
+   [] Connnect With Me
+        https://fb.com/notsaied
+        https://instagram.com/notsaied
+        https://t.me/notsaied
+   -->
     </body>
 </html>
