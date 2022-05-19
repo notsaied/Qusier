@@ -18,6 +18,7 @@
 
       <!-- og:og -->
       <meta property="og:title" content="<?= $info['title'] ?>" />
+      <meta property="og:type"  content="article" />
       <meta property="og:description" content="<?= $info['description'] ?>" />
       <meta property="og:image" content="<?= $info['image'] ?>" />
       <meta property="og:locale" content="ar_EG" />
@@ -38,9 +39,11 @@
       <!-- Style Files -->
       <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
-   </head>
+    </head>
 
     <body>
+        <div class="loading">Loading&#8230;</div>
+
    <!-- Navbar Section -->
     <div class="header p-3">
         <div class="container">
@@ -93,7 +96,7 @@
 
     <div class="carousel-item active">
       <img class="d-block w-100" src="styles/images/tabya.png" alt="الطابية بمدينة القصير">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption lead">
         <h5>الطابية</h5>
         <p>شيد العثمانيون فى عام 1799 ميلادية، صرحاً ضخماً لحماية مدينة القصير فى تلك التوقيت من قاطعى الطرق، واللصوص، على قوافل الحجاج، التى كانت تغادر إلى بلاد الحجاز من ميناء القصير، وكذلك على أهل القصير، والذين بسبب تلك اللصوص تركوا المدينة انذاك وتعطلت الحياة والتجارة، وشيد القلعة العثمانية فى تلك التوقيت لحمايتهم.</p>
       </div>
@@ -101,7 +104,7 @@
 
     <div class="carousel-item">
       <img class="d-block w-100" src="styles/images/shat.png" alt="شاطئ مدينة القصير البحر الأحمر">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption lead">
         <h5>شواطئ مدينة القصير</h5>
         <p>شواطئ مدينة القصير جنوب البحر الأحمر، التى تتسم بالبساطة التى يمتزج بها الجمال والطبيعة الخلابة، وكذلك عبق التاريخ فى المبانى القريبة من البحر، هنا فى مدينة القصير البحر للجميع لا شواطئ للأغنياء ولا شواطئ للفقراء، الجميع يمكنه أن يقضى وقته كيفما يشاء على أجمل شواطئ البحر الأحمر.</p>
       </div>
@@ -109,7 +112,7 @@
 
     <div class="carousel-item">
       <img class="d-block w-100" src="styles/images/elmena.png" alt="ميناء القصير القديمة">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption lead">
         <h5>ميناء القصير القديمة</h5>
         <p>هذا الميناء شهد خلال هذين العصرين أزهى أيامه، حيث لعبت مدينة القصير دورا مهما واستخدمت مع ميناء عيذاب جنوبا كمركز تجاري مهم للتجارة مع الهند واليمن وشرق إفريقيا، وكان السبب الرئيسي لهذا الازدهار قربها من قوص الحاضرة العلمية والتجارية للصعيد في هذا العصر ،حيث كانت الأخيرة أهم المدن التجارية في ذلك الوقت .</p>
       </div>
@@ -159,6 +162,31 @@
         }
 
       ?>
+  </tbody>
+</table>
+        </div>
+    </section>
+
+    <section class="phones py-2">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <h2 class="side_title">ارقام قد تهمك</h2>
+            <p class="lead">
+              بعض الارقام اللي ممكن تحتاجها.
+            </p>
+            <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">المسؤل</th>
+      <th scope="col">الرقم</th>
+    </tr>
+  </thead>
+  <tbody>
+       <tr><td>رئيس المدينة</td><td><b>065</b>&nbsp;333&nbsp;0040</td></tr>
+       <tr><td>رقم الاسعاف</td><td>123</td></tr>
+       <tr><td>شرطة النجدة</td><td>122</td></tr>
+       <tr><td>طوارئ الكهرباء</td><td>121</td></tr>
+       <tr><td>شرطة السياحة</td><td>126</td></tr>
+       <tr><td>شرطة المرور</td><td>128</td></tr>
   </tbody>
 </table>
         </div>
