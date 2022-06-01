@@ -45,16 +45,33 @@
         <div class="loading">Loading&#8230;</div>
 
    <!-- Navbar Section -->
-    <div class="header p-3">
-        <div class="container">
-      <h2 class="title" style="text-align:center;">مرحبا بك</h2>
-      </div>
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-3">
+     <div class="container">
+   
+        <b class="navbar-brand title">القصير</b>
 
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
+        <span class="navbar-nav ml-auto navbar-toggler-icon" id="navopen"></span>
 
-    </div> <!-- End Navbar -->
+    </div> <!-- End Container -->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn navclose">&times;</a>
+        
+        <div class="overlay-content">
+        
+        <a target="_blank" href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D8%B1_(%D9%85%D8%B5%D8%B1)">ويكيبيديا</a>
+        <a class="navclose" href="#mss">اقتراحات</a>
+        <a target="_blank" href="https://fb.com/notsaied">تواصل معانا</a>
+        
+        </div>
+
+    </div> <!-- End Nav overlay -->
+
+  </nav><!-- End Navbar -->
+
+  <div dir="ltr">
+  <webrouk-back-top-scroll-indicator title="Back to Top" show-at="50"></webrouk-back-top-scroll-indicator>
+  </div>
 
     <!-- Frist Section -->
     <section class="description py-2">
@@ -212,7 +229,7 @@
     </section>
 
 
-    <section class="leave_message py-2 bg-there">
+    <section class="leave_message py-2 bg-there" id="mss">
         <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="side_title">حابب تقول حاجه ؟</h2>
             <p class="lead">لو عندك اقتراح او اي حاجه حابب تقولها اتفضل اكتبها وهتظهر في الموقع للزائرين.</p>
@@ -254,6 +271,7 @@
     </footer>
 
     <!-- JS section -->
+<script id="rendered-js" type="module">import webroukBackTopScrollIndicator from "https://cdn.skypack.dev/webrouk-back-top-scroll-indicator@latest";</script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
