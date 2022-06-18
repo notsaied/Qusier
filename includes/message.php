@@ -19,7 +19,7 @@ $inputs = ['name','email','csrf_token','message'];
 
     }
 
-    if(strval(@$TOKEN) !== strval(@$_POST['csrf_token'])){
+    if(@$TOKEN !== @$_POST['csrf_token']){
         $errors[] = 'please try again';
     }
 
