@@ -2,16 +2,14 @@
 session_start();
 
 #token
-if(isset($_SESSION['token'])){
+if(isset($_COOKIE['token'])){
 
-    $TOKEN = $_SESSION['token'];
+    $TOKEN = $_COOKIE['token'];
 
 }else{
 
     $TOKEN = bin2hex(random_bytes(35));
-
-    $_SESSION['token'] = $TOKEN;
-
+    setcookie('token', $TOKEN, time() + 60 * 60 * 24 * 30);
 }
 # vars
 $path = basename(__DIR__).'/';
