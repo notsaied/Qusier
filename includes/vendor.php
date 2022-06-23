@@ -9,7 +9,7 @@ if(isset($_COOKIE['token'])){
 }else{
 
     $TOKEN = bin2hex(random_bytes(35));
-    setcookie('token', $TOKEN, time() + 60 * 60 * 24 * 30);
+    setcookie('token', $TOKEN, time() + 60 * 60 * 15);
 }
 # vars
 $path = basename(__DIR__).'/';
@@ -24,6 +24,6 @@ $link = $protocol . '://' . $_SERVER['HTTP_HOST'];
 #functions
 function filterinput($str){
     $str = htmlspecialchars($str);
-    $str = filter_var($str, FILTER_SANITIZE_STRING);
+    $str = filter_var($str, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     return $str;
 }
